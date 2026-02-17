@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://lumora-ten.vercel.app/</loc>
+    <lastmod>2026-02-17T16:45:00+07:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/er.png</image:loc>
+      <image:title>Web Design Workspace Hero Image - High Performance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/34.png</image:loc>
+      <image:title>Desain Website Company Profile Modern - Portfolio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/43.png</image:loc>
+      <image:title>Pengembangan Platform E-Commerce - Portfolio</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/ebert1.png</image:loc>
+      <image:title>Aplikasi Mobile Responsif UI/UX Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/ebert2.png</image:loc>
+      <image:title>Redesign Dashboard Admin - User Interface</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/ebert3.png</image:loc>
+      <image:title>Branding Identity dan Logo Design</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/akhdan.jpg</image:loc>
+      <image:title>Adiel Ebert Nakula S - Senior Web Developer</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://lumora-ten.vercel.app/img/ebertgg.jpeg</image:loc>
+      <image:title>Akhdan Al Fikri - Lead Designer</image:title>
+    </image:image>
+  </url>
+</urlset>

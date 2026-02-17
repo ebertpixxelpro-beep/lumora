@@ -1,0 +1,26 @@
+# Robots.txt for Lumora Webworks
+# Optimized for maximum crawl efficiency and security
+
+User-agent: *
+Allow: /
+
+# Block access to system files
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Explicitly Allow Assets for Mobile-Friendly Rendering (Critical for Google)
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.gif$
+
+# Host location (optional but good practice)
+Host: https://lumora-ten.vercel.app
+
+# Sitemap Location
+Sitemap: https://lumora-ten.vercel.app/sitemap.xml
