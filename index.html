@@ -2,6 +2,9 @@
 <html lang="id">
 
 <head>
+
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✨ Lumora Webworks | Jasa Website Premium 🚀</title>
@@ -24,9 +27,10 @@
     <meta property="og:type" content="business.business">
     <meta property="og:url" content="https://lumora.com/">
     <meta property="og:title" content="Jasa Pembuatan Website Profesional - Desain Premium">
+    <meta property="og:site_name" content="Lumora Webworks">
     <meta property="og:description"
         content="Wujudkan kredibilitas bisnis Anda dengan website desain premium yang cepat, aman, dan SEO friendly.">
-    <meta property="og:image" content="https://lumora.com/assets/og-image.jpg">
+    <meta property="og:image" content="https://lumora-ten.vercel.app/Lumora Webworks/web-app-manifest-512x512.png">
     <meta property="og:locale" content="id_ID">
     <meta property="business:contact_data:street_address" content="Jawa Timur">
     <meta property="business:contact_data:locality" content="Surabaya">
@@ -39,14 +43,16 @@
     <meta property="twitter:title" content="Jasa Pembuatan Website Profesional - Desain Premium">
     <meta property="twitter:description"
         content="Wujudkan kredibilitas bisnis Anda dengan website desain premium yang cepat, aman, dan SEO friendly.">
-    <meta property="twitter:image" content="https://lumora.com/assets/og-image.jpg">
+    <meta property="twitter:image" content="https://lumora-ten.vercel.app/Lumora Webworks/web-app-manifest-512x512.png">
 
-    <!-- Dynamic SVG Favicon (Gold Hexagon Logo) -->
-    <link rel="icon" type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23D4AF37' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z' fill='%23050505'/%3E%3Cpath d='M50 5 L50 95 M10 25 L90 75 M90 25 L10 75' stroke-opacity='0.8'/%3E%3C/svg%3E">
-    <link rel="apple-touch-icon"
-        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='none' stroke='%23D4AF37' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z' fill='%23050505'/%3E%3Cpath d='M50 5 L50 95 M10 25 L90 75 M90 25 L10 75' stroke-opacity='0.8'/%3E%3C/svg%3E">
-    <meta name="theme-color" content="#050505">
+    <!-- Favicon (Brand Logo) -->
+    <link rel="icon" type="image/png" href="Lumora%20Webworks/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="Lumora%20Webworks/favicon.svg" />
+    <link rel="shortcut icon" href="Lumora%20Webworks/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="Lumora%20Webworks/apple-touch-icon.png" />
+    <link rel="manifest" href="Lumora%20Webworks/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#000000">
 
     <!-- Preconnect for Performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,9 +79,17 @@
     [
       {
         "@context": "https://schema.org",
-        "@type": "ProfessionalService",
+        "@type": "WebSite",
+        "name": "Lumora",
+        "alternateName": ["Lumora Webworks", "Jasa Website Lumora"],
+        "url": "https://lumora.com"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
         "name": "Lumora Webworks",
-        "image": "https://lumora.com/assets/og-image.jpg",
+        "image": "https://lumora-ten.vercel.app/Lumora%20Webworks/apple-touch-icon.png",
+        "logo": "https://lumora-ten.vercel.app/Lumora%20Webworks/apple-touch-icon.png",
         "description": "Jasa pembuatan website profesional, murah, dan berkualitas. Spesialis company profile, toko online, dan sistem custom dengan desain premium.",
         "url": "https://lumora.com",
         "telephone": "+6281259953779",
@@ -188,13 +202,8 @@
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand d-flex align-items-center gap-3" href="#">
-                <!-- Custom Logo SVG -->
-                <svg class="brand-icon-custom" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"
-                    stroke="var(--accent-gold)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" fill="rgba(212, 175, 55, 0.1)" />
-                    <path d="M50 5 L50 95 M10 25 L90 75 M90 25 L10 75" stroke-opacity="0.8" />
-                    <circle cx="50" cy="50" r="15" fill="var(--accent-gold)" stroke="none" class="animate-pulse" />
-                </svg>
+                <!-- Integrated Logo (Replaces inline SVG) -->
+                <img src="img/logo.svg" alt="Lumora Logo" class="brand-icon-custom" style="width: 40px; height: 40px;">
                 <div class="d-flex flex-column">
                     <span class="lh-1 fw-bold brand-text-lumora"
                         style="font-family: var(--font-display); color: var(--accent-gold);">LUMORA</span>
@@ -239,11 +248,19 @@
                 aria-hidden="true"></div>
 
             <!-- Mobile Background (Visible only on mobile) -->
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-lg-none" style="z-index: 1;">
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-lg-none" style="z-index: 1; overflow: hidden;">
+                <!-- Gold Glow Center -->
                 <div class="position-absolute top-50 start-50 translate-middle rounded-circle opacity-20 blur-3"
-                    style="width: 300px; height: 300px; background: var(--accent-gold); filter: blur(80px);"></div>
-                <img src="https://placehold.co/600x800/050505/141414?text=Mobile+App+Design"
-                    class="w-100 h-100 object-fit-cover opacity-50" alt="Mobile Background">
+                    style="width: 350px; height: 350px; background: var(--accent-gold); filter: blur(90px);"></div>
+
+                <!-- Secondary Glow Top Right -->
+                <div class="position-absolute top-0 end-0 translate-middle-y rounded-circle opacity-10 blur-3"
+                    style="width: 200px; height: 200px; background: #1E3D59; filter: blur(60px); opacity: 0.3;"></div>
+
+                <!-- Grid Overlay for Texture -->
+                <div class="position-absolute top-0 start-0 w-100 h-100"
+                    style="background-image: linear-gradient(rgba(212, 175, 55, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(212, 175, 55, 0.05) 1px, transparent 1px); background-size: 30px 30px; opacity: 0.2;">
+                </div>
             </div>
 
             <div class="container position-relative" style="z-index: 2;">
@@ -256,27 +273,38 @@
                         </span>
                         <h1 class="display-3 fw-bold text-white mb-4 animate-fade-in-up delay-100"
                             style="font-family: var(--font-display); line-height: 1.1;">
-                            Jasa Website <br>
-                            <span class="text-transparent bg-clip-text"
-                                style="background: linear-gradient(to right, #D4AF37, #F2F0E4, #D4AF37); -webkit-background-clip: text; color: transparent; background-size: 200% auto; animation: shine 5s infinite;">
-                                Profesional
+                            Lumora Webworks: <br>
+                            <span class="text-transparent bg-clip-text h2 d-block mt-2"
+                                style="background: linear-gradient(to right, #D4AF37, #F2F0E4, #D4AF37); -webkit-background-clip: text; color: transparent; background-size: 200% auto; animation: shine 5s infinite; font-size: 2.5rem;">
+                                Jasa Pembuatan Website Profesional
                             </span>
                         </h1>
-                        <p class="lead text-white-50 mb-5 animate-fade-in-up delay-200"
-                            style="max-width: 550px; margin-left: auto; margin-right: auto; font-family: var(--font-body); font-weight: 300;">
-                            Wujudkan kredibilitas bisnis Anda dengan website desain premium yang cepat, aman, dan SEO
-                            friendly.
-                            Kami ahli mengubah pengunjung menjadi pelanggan setia.
-                        </p>
+                        <div class="animate-fade-in-up delay-200 mx-auto" style="max-width: 700px;">
+                            <p class="lead text-white-50 mb-4"
+                                style="font-family: var(--font-body); font-weight: 300; font-size: 1.1rem; line-height: 1.6;">
+                                <span class="text-white">Lumora Webworks</span> adalah mitra teknologi yang berlokasi di
+                                <span class="text-white">Indonesia</span>, spesialis dalam pengembangan <strong>Website
+                                    Company Profile</strong>, <strong>E-Commerce Integrasi</strong>, dan <strong>Sistem
+                                    Aplikasi Web Custom (ERP/CRM)</strong>.
+                            </p>
+                            <p
+                                class="small text-white-50 border-start border-warning border-3 ps-3 text-start mx-auto d-inline-block bg-dark bg-opacity-25 py-2 pe-3 rounded-end">
+                                <i class="fas fa-check-circle text-warning me-1"></i> SEO Friendly
+                                <span class="mx-2">|</span>
+                                <i class="fas fa-check-circle text-warning me-1"></i> Mobile First
+                                <span class="mx-2">|</span>
+                                <i class="fas fa-check-circle text-warning me-1"></i> High Performance
+                            </p>
+                        </div>
                         <div
                             class="d-flex flex-column flex-sm-row gap-4 justify-content-center justify-content-lg-start animate-fade-in-up delay-300">
                             <a href="#products"
                                 class="btn btn-primary btn-lg d-flex align-items-center justify-content-center shadow-lg">
-                                Lihat Penawaran <i class="fas fa-arrow-right ms-3 small"></i>
+                                <span></span>Lihat Penawaran</span> <i class="fas fa-arrow-right ms-3 small"></i>
                             </a>
                             <a href="https://wa.me/6281259953779"
                                 class="btn btn-secondary-glass btn-lg d-flex align-items-center justify-content-center">
-                                <i class="fab fa-whatsapp me-2"></i> Free Konsultasi
+                                <span>Free Konsultasi</span>
                             </a>
                         </div>
 
@@ -355,12 +383,33 @@
         <section id="about">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 mb-5 mb-lg-0 animate-slide-right">
-                        <div class="position-relative">
+
+                    <!-- MOBILE ONLY TITLE BLOCK (Visible on d-lg-none) -->
+                    <div class="col-12 d-lg-none mb-5 text-center">
+                        <div
+                            class="d-inline-flex align-items-center mb-3 justify-content-center px-4 py-2 rounded-pill border border-secondary bg-dark bg-opacity-50">
+                            <!-- Integrated Mini Logo -->
+                            <img src="img/logo.svg" alt="Logo" class="me-2" style="width: 20px; height: 20px;">
+                            <span class="text-primary fw-bold text-uppercase small" style="letter-spacing: 2px;">Profil
+                                Perusahaan</span>
+                        </div>
+                        <h2 class="display-6 fw-bold text-white mb-3"
+                            style="font-family: var(--font-display); line-height: 1.2;">
+                            Jasa Pembuatan <span class="fst-italic text-warning fw-light">Website Profesional</span> &
+                            <br>
+                            Sistem Custom
+                        </h2>
+                        <div class="mx-auto bg-primary" style="width: 50px; height: 3px; border-radius: 2px;"></div>
+                    </div>
+
+                    <div class="col-lg-6 mb-5 mb-lg-0 animate-slide-right order-1 order-lg-1">
+
+                        <!-- Image Wrapper (Moved to Top) -->
+                        <div class="position-relative mb-4">
                             <div class="position-absolute top-0 start-0 translate-middle bg-warning rounded-circle blur-3 opacity-25"
                                 style="width: 200px; height: 200px; z-index: -1;"></div>
                             <img src="img/e.png" alt="Tentang Layanan Kami"
-                                class="img-fluid rounded-4 shadow-lg border border-secondary" loading="lazy">
+                                class="img-fluid rounded-4 shadow-lg border border-secondary w-100" loading="lazy">
                             <div class="position-absolute bottom-0 end-0 translate-middle-y bg-dark p-3 rounded-3 border border-secondary shadow-lg d-none d-md-block"
                                 style="margin-right: -20px;">
                                 <div class="d-flex align-items-center">
@@ -374,68 +423,162 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-lg-6 ps-lg-5 animate-slide-left">
 
-                        <!-- Section Label -->
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="fas fa-minus text-primary me-2"></i>
-                            <span class="text-primary fw-bold text-uppercase small" style="letter-spacing: 2px;">Tentang
-                                Kami</span>
+                        <!-- Content Below Image (Stylish Feature Cards) -->
+                        <div class="mt-4 d-flex flex-column gap-3">
+                            <!-- Card 1 -->
+                            <div class="p-4 rounded-4 border border-secondary bg-black bg-opacity-25 animate-fade-in-up delay-100"
+                                style="backdrop-filter: blur(5px);">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="bg-primary bg-opacity-10 p-2 rounded-circle me-3">
+                                        <i class="fas fa-medal text-primary"></i>
+                                    </div>
+                                    <h3 class="h6 text-white fw-bold mb-0">Dedikasi Kualitas</h3>
+                                </div>
+                                <p class="text-white-50 mb-0 small" style="text-align: justify; line-height: 1.6;">
+                                    Di era di mana impresi pertama adalah segalanya, kami memastikan setiap piksel
+                                    merepresentasikan profesionalisme brand Anda.
+                                </p>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="p-4 rounded-4 border border-secondary bg-black bg-opacity-25 animate-fade-in-up delay-200"
+                                style="backdrop-filter: blur(5px);">
+                                <div class="d-flex align-items-center mb-2">
+                                    <div class="bg-warning bg-opacity-10 p-2 rounded-circle me-3">
+                                        <i class="fas fa-chart-line text-warning"></i>
+                                    </div>
+                                    <h3 class="h6 text-white fw-bold mb-0">Data & Kreativitas</h3>
+                                </div>
+                                <p class="text-white-50 mb-0 small" style="text-align: justify; line-height: 1.6;">
+                                    Sinergi antara <strong>analisis data</strong> dan <strong>desain kreatif</strong>
+                                    untuk solusi web yang indah namun efektif mencapai target bisnis.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 animate-slide-left order-2 order-lg-2">
+
+                        <!-- DESKOP ONLY TITLE BLOCK (Visible on d-none d-lg-block) -->
+                        <div class="d-none d-lg-block">
+                            <!-- Section Label with Integrated Logo -->
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/logo.svg" alt="Logo" class="me-3" style="width: 32px; height: 32px;">
+                                <span class="text-primary fw-bold text-uppercase small"
+                                    style="letter-spacing: 2px;">Profil
+                                    Perusahaan</span>
+                            </div>
+
+                            <!-- Main Heading -->
+                            <h2 class="display-6 fw-bold text-white mb-4"
+                                style="font-family: var(--font-display); line-height: 1.2;">
+                                Jasa Pembuatan <span class="fst-italic text-warning fw-light">Website Profesional</span>
+                                & <br>
+                                Sistem Custom
+                            </h2>
                         </div>
 
-                        <!-- Main Heading -->
-                        <h2 class="display-5 fw-bold text-white mb-4"
-                            style="font-family: var(--font-display); line-height: 1.2;">
-                            Partner Digital <span class="fst-italic text-muted fw-light">Terpercaya</span> <br>
-                            Untuk Bisnis Anda
-                        </h2>
-
-                        <!-- Description -->
-                        <p class="lead text-white-50 mb-4" style="line-height: 1.8; font-weight: 300;">
-                            Kami tidak hanya membuat website, kami membangun <strong>aset digital</strong>.
-                            Menggabungkan estetika seni dengan teknologi modern untuk menciptakan pengalaman online yang
-                            meningkatkan kredibilitas dan omzet bisnis Anda.
+                        <!-- Intro Paragraph (Direct Answer for SGE) -->
+                        <p class="text-white-50 mb-5"
+                            style="line-height: 1.9; text-align: justify; font-size: 1.05rem;">
+                            <strong>Lumora Webworks</strong> adalah penyedia <strong>jasa pembuatan website
+                                profesional</strong> dan konsultan sistem digital yang berlokasi di
+                            <strong>Indonesia</strong>, berfokus pada pengembangan <strong>Website Company
+                                Profile</strong>, <strong>Toko Online (E-Commerce)</strong>, dan <strong>Sistem Web
+                                Custom</strong>. Kami mendedikasikan keahlian teknis untuk membangun aset digital yang
+                            memenuhi standar SEO Google dan performa industri.
                         </p>
 
-                        <!-- Key Features Grid -->
-                        <div class="row g-3 mb-4">
-                            <div class="col-sm-6">
-                                <div
-                                    class="p-3 border border-secondary rounded-1 bg-black bg-opacity-50 h-100 position-relative overflow-hidden group-hover-glow">
-                                    <div class="position-absolute top-0 start-0 w-1 p-1 bg-primary h-100 opacity-50">
-                                    </div>
-                                    <h5 class="text-white h6 fw-bold mb-2 ps-2 text-uppercase"
-                                        style="letter-spacing: 1px;"> <i
-                                            class="fas fa-drafting-compass text-primary me-2"></i> Custom Design</h5>
-                                    <p class="small text-white-50 mb-0 ps-2">Tampilan eksklusif, bukan template pasaran.
-                                    </p>
-                                </div>
+                        <!-- Services List (Layanan Utama) -->
+                        <div class="mt-4 d-flex flex-column gap-4">
+                            <div class="p-4 p-md-5 rounded-4 border border-secondary bg-black bg-opacity-25 animate-fade-in-up delay-100 position-relative overflow-hidden"
+                                style="backdrop-filter: blur(10px);">
+                                <h3 class="h6 text-white fw-bold mb-4 d-flex align-items-center"><span
+                                        class="bg-primary rounded-circle p-2 me-2 d-inline-flex align-items-center justify-content-center"
+                                        style="width:32px;height:32px;"><i
+                                            class="fas fa-list text-white micro-small"></i></span>Layanan Utama Lumora
+                                    Webworks</h3>
+                                <ul class="text-white-50 small mb-0 ps-3" style="line-height: 2;">
+                                    <li class="mb-2"><strong>Website Company Profile:</strong> Pengembangan situs web
+                                        representatif untuk korporasi dengan desain elegan, informatif, dan fokus pada
+                                        penyampaian identitas merek yang kuat.</li>
+                                    <li class="mb-2"><strong>Toko Online / E-Commerce:</strong> Solusi perdagangan
+                                        digital lengkap dengan fitur katalog produk, keranjang belanja, dan integrasi
+                                        pembayaran otomatis.</li>
+                                    <li><strong>Sistem Web Custom:</strong> Pengembangan aplikasi web (Web Apps) yang
+                                        dirancang khusus untuk manajemen data dan alur kerja internal perusahaan.</li>
+                                </ul>
                             </div>
-                            <div class="col-sm-6">
-                                <div
-                                    class="p-3 border border-secondary rounded-1 bg-black bg-opacity-50 h-100 position-relative overflow-hidden">
-                                    <div class="position-absolute top-0 start-0 w-1 p-1 bg-primary h-100 opacity-50">
-                                    </div>
-                                    <h5 class="text-white h6 fw-bold mb-2 ps-2 text-uppercase"
-                                        style="letter-spacing: 1px;"> <i class="fas fa-rocket text-primary me-2"></i>
-                                        Fast & SEO</h5>
-                                    <p class="small text-white-50 mb-0 ps-2">Optimasi performa maksimal di Google.</p>
-                                </div>
-                            </div>
-                        </div>
 
-                        <!-- Action Buttons -->
-                        <div class="d-flex flex-wrap gap-3 mt-2">
-                            <a href="#portfolio" class="btn btn-secondary-glass px-4">
-                                <i class="fas fa-images me-2 small"></i> Lihat Karya
-                            </a>
-                            <a href="https://wa.me/6282245942611" class="btn btn-primary px-4 shadow-lg">
-                                <i class="fab fa-whatsapp me-2"></i> Review Gratis
-                            </a>
+                            <!-- Target Users List -->
+                            <div class="p-4 p-md-5 rounded-4 border border-secondary bg-black bg-opacity-25 animate-fade-in-up delay-200 position-relative overflow-hidden"
+                                style="backdrop-filter: blur(10px);">
+                                <h3 class="h6 text-white fw-bold mb-4 d-flex align-items-center"><span
+                                        class="bg-warning rounded-circle p-2 me-2 d-inline-flex align-items-center justify-content-center"
+                                        style="width:32px;height:32px;"><i
+                                            class="fas fa-users text-dark micro-small"></i></span>Target Pengguna Solusi
+                                    Digital</h3>
+                                <ul class="text-white-50 small mb-0 ps-3" style="line-height: 2;">
+                                    <li class="mb-2"><strong>Pemilik Bisnis & UMKM:</strong> Yang membutuhkan
+                                        kredibilitas digital instan.</li>
+                                    <li class="mb-2"><strong>Perusahaan Korporat:</strong> Yang memerlukan sistem profil
+                                        profesional dan aman.</li>
+                                    <li><strong>Instansi & Organisasi:</strong> Yang memprioritaskan transparansi
+                                        informasi publik.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- New Row for Tech Specs & Actions (Full Width to Balance Layout) -->
+            <div class="row mt-5 mt-lg-n4 position-relative z-index-2">
+                <div class="col-lg-12">
+                    <div
+                        class="p-4 p-lg-5 rounded-4 border border-secondary bg-dark bg-opacity-50 animate-fade-in-up delay-400">
+                        <div class="row align-items-center gy-4">
+                            <!-- Tech Specs Column -->
+                            <div class="col-lg-12">
+                                <h2 class="h6 text-white text-uppercase small mb-3 fw-bold"
+                                    style="letter-spacing: 1px;">
+                                    <i class="fas fa-server text-warning me-2"></i>Standar Spesifikasi Teknis
+                                </h2>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul class="text-white-50 small mb-0 ps-3" style="line-height: 1.8;">
+                                            <li class="mb-2"><strong>Desain Premium & Modern:</strong> Antarmuka
+                                                pengguna (UI/UX) yang estetik dan intuitif.</li>
+                                            <li class="mb-2"><strong>Responsif (Mobile-First):</strong> Tampilan adaptif
+                                                sempurna di semua perangkat (Desktop, Tablet, HP).</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul class="text-white-50 small mb-0 ps-3" style="line-height: 1.8;">
+                                            <li class="mb-2"><strong>Struktur Kode SEO-Friendly:</strong> Optimasi untuk
+                                                kemudahan crawling mesin pencari Google.</li>
+                                            <li class="mb-2"><strong>Garansi Pemeliharaan:</strong> Dukungan teknis
+                                                pasca-rilis untuk keamanan dan stabilitas.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Action Buttons Column (Moved below text for better SEO flow) -->
+                            <div class="col-lg-12 mt-4 text-center">
+                                <div class="d-flex flex-wrap gap-3 justify-content-center">
+                                    <a href="#portfolio" class="btn btn-outline-light px-4 py-2">
+                                        <i class="fas fa-images me-2 small"></i> Lihat Portofolio
+                                    </a>
+                                    <a href="https://wa.me/6282245942611" class="btn btn-primary px-4 py-2 shadow-lg">
+                                        <i class="fab fa-whatsapp me-2"></i> Hubungi Kami
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -857,36 +1000,41 @@
                         <!-- Item 1: Landscape -->
                         <div class="carousel-item active">
                             <a href="https://rotisenjajakarta.vercel.app/" class="d-block">
-                                <img src="img/34.png" class="d-block w-100 rounded shadow-sm object-fit-cover"
-                                    style="height: 250px;" alt="Desain Website Company Profile Modern" loading="lazy">
+                                <img src="img/34.png" class="d-block rounded shadow-sm"
+                                    style="width: auto; height: auto; max-width: 100%; max-height: 250px; margin: 0 auto; display: block;"
+                                    alt="Desain Website Company Profile Modern" loading="lazy">
                             </a>
                         </div>
                         <!-- Item 2: Landscape -->
                         <div class="carousel-item">
                             <a href="https://financiabankjkt.vercel.app/" class="d-block">
-                                <img src="img/43.png" class="d-block w-100 rounded shadow-sm object-fit-cover"
-                                    style="height: 250px;" alt="Pengembangan Platform E-Commerce" loading="lazy">
+                                <img src="img/43.png" class="d-block rounded shadow-sm"
+                                    style="width: auto; height: auto; max-width: 100%; max-height: 250px; margin: 0 auto; display: block;"
+                                    alt="Pengembangan Platform E-Commerce" loading="lazy">
                             </a>
                         </div>
                         <!-- Item 3: Portrait -->
                         <div class="carousel-item">
                             <a href="https://aunara-furniture.vercel.app/" class="d-block">
-                                <img src="img/ebert1.png" class="d-block w-100 rounded shadow-sm object-fit-cover"
-                                    style="height: 400px;" alt="Aplikasi Mobile Responsif UI/UX" loading="lazy">
+                                <img src="img/ebert1.png" class="d-block rounded shadow-sm"
+                                    style="width: auto; height: auto; max-width: 100%; max-height: 250px; margin: 0 auto; display: block;"
+                                    alt="Aplikasi Mobile Responsif UI/UX" loading="lazy">
                             </a>
                         </div>
                         <!-- Item 4: Portrait -->
                         <div class="carousel-item">
                             <a href="https://harleydavidson-seven.vercel.app/" class="d-block">
-                                <img src="img/ebert2.png" class="d-block w-100 rounded shadow-sm object-fit-cover"
-                                    style="height: 400px;" alt="Redesign Dashboard Admin" loading="lazy">
+                                <img src="img/ebert2.png" class="d-block rounded shadow-sm"
+                                    style="width: auto; height: auto; max-width: 100%; max-height: 250px; margin: 0 auto; display: block;"
+                                    alt="Redesign Dashboard Admin" loading="lazy">
                             </a>
                         </div>
                         <!-- Item 5: Portrait -->
                         <div class="carousel-item">
                             <a href="https://vegan-diet.vercel.app/" class="d-block">
-                                <img src="img/ebert3.png" class="d-block w-100 rounded shadow-sm object-fit-cover"
-                                    style="height: 400px;" alt="Branding Identity dan Logo" loading="lazy">
+                                <img src="img/ebert3.png" class="d-block rounded shadow-sm"
+                                    style="width: auto; height: auto; max-width: 100%; max-height: 250px; margin: 0 auto; display: block;"
+                                    alt="Branding Identity dan Logo" loading="lazy">
                             </a>
                         </div>
                     </div>
@@ -917,7 +1065,7 @@
                 <div class="row g-4">
                     <!-- Member 1 -->
                     <div class="col-6 animate-fade-in-up delay-100">
-                        <div class="team-card p-2 p-md-4 h-100 position-relative"
+                        <div class="team-card p-2 p-md-4 h-100 position-relative d-flex flex-column"
                             style="background: var(--bg-card); border: 1px solid var(--accent-gold); transition: transform 0.3s ease;">
                             <div class="text-center mb-4">
                                 <div
@@ -926,23 +1074,25 @@
                                         height="140" loading="lazy">
                                 </div>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center d-flex flex-column flex-grow-1">
                                 <h4 class="h4 mb-2 text-uppercase"
-                                    style="font-family: var(--font-display); letter-spacing: 1px;">Akhdan Al fikri</h4>
+                                    style="font-family: var(--font-display); letter-spacing: 1px;">Akhdan Al Fikri</h4>
                                 <p class="text-primary small text-uppercase mb-3"
                                     style="letter-spacing: 2px; font-size: 0.75rem;">Developer</p>
-                                <p class="text-muted mb-4 small">"Jago codingan dan menciptakan pengalaman pengguna
+                                <p class="text-muted mb-4 small flex-grow-1">"Jago codingan dan menciptakan pengalaman
+                                    pengguna
                                     Mengubah teknologi yang dingin menjadi pengalaman"</p>
-                                <a href="https://Portfoliosayaalf.vercel.app" aria-label="Selengkapnya tentang Sarah Wijaya"
-                                    class="text-primary text-decoration-none text-uppercase small border-bottom border-primary pb-1 hover-gold"
-                                    style="font-size: 0.7rem; letter-spacing: 1px;">Selengkapnya</a>
+                                <a href="https://Portfoliosayaalf.vercel.app"
+                                    aria-label="Selengkapnya tentang Akhdan Al Fikri"
+                                    class="btn btn-sm btn-outline-dark w-100 mt-auto hover-gold d-flex justify-content-center align-items-center py-2"
+                                    style="font-size: 0.75rem; letter-spacing: 1px;">SELENGKAPNYA</a>
                             </div>
                         </div>
                     </div>
 
                     <!-- Member 2 -->
                     <div class="col-6 animate-fade-in-up delay-200">
-                        <div class="team-card p-2 p-md-4 h-100 position-relative"
+                        <div class="team-card p-2 p-md-4 h-100 position-relative d-flex flex-column"
                             style="background: var(--bg-card); border: 1px solid var(--accent-gold); transition: transform 0.3s ease;">
                             <div class="text-center mb-4">
                                 <div
@@ -951,17 +1101,19 @@
                                         width="140" height="140" loading="lazy">
                                 </div>
                             </div>
-                            <div class="text-center">
+                            <div class="text-center d-flex flex-column flex-grow-1">
                                 <h4 class="h4 mb-2 text-uppercase"
-                                    style="font-family: var(--font-display); letter-spacing: 1px;">Adiel Ebert Nakula.s
+                                    style="font-family: var(--font-display); letter-spacing: 1px;">Adiel Ebert Nakula.S
                                 </h4>
                                 <p class="text-primary small text-uppercase mb-3"
                                     style="letter-spacing: 2px; font-size: 0.75rem;">Sendisainer website</p>
-                                <p class="text-muted mb-4 small">"jago dalam mendisain website mau itu fersi mobile dan
+                                <p class="text-muted mb-4 small flex-grow-1">"jago dalam mendisain website mau itu fersi
+                                    mobile dan
                                     desktop dan mampu meningkat kan perfoma dan Asebilitas dalam website"</p>
-                                <a href="https://ebert-nakula.vercel.app/" aria-label="Selengkapnya tentang Rian Ardianto"
-                                    class="text-primary text-decoration-none text-uppercase small border-bottom border-primary pb-1 hover-gold"
-                                    style="font-size: 0.7rem; letter-spacing: 1px;">Selengkapnya</a>
+                                <a href="https://ebert-nakula.vercel.app/"
+                                    aria-label="Selengkapnya tentang Adiel Ebert Nakula.S"
+                                    class="btn btn-sm btn-outline-dark w-100 mt-auto hover-gold d-flex justify-content-center align-items-center py-2"
+                                    style="font-size: 0.75rem; letter-spacing: 1px;">SELENGKAPNYA</a>
                             </div>
                         </div>
                     </div>
@@ -978,49 +1130,60 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="accordion" id="accordionExample">
+                            <!-- Question 1: What -->
                             <div class="accordion-item animate-fade-in-up delay-100">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        Berapa lama proses pengerjaan website?
+                                        Apa layanan utama yang ditawarkan oleh Lumora Webworks?
                                     </button>
                                 </h2>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Waktu pengerjaan tergantung pada kompleksitas proyek, namun rata-rata kami
-                                        menyelesaikannya dalam waktu <strong>1/2 minggu/hari </strong>.
+                                        <p>Layanan utama kami meliputi:</p>
+                                        <ul>
+                                            <li><strong>Pembuatan Website Company Profile:</strong> Untuk membangun
+                                                citra korporat profesional.</li>
+                                            <li><strong>Pengembangan Toko Online (E-Commerce):</strong> Platform jualan
+                                                lengkap dengan integrasi pembayaran.</li>
+                                            <li><strong>Sistem Web Custom:</strong> Aplikasi berbasis web yang
+                                                disesuaikan dengan kebutuhan spesifik bisnis.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+                            <!-- Question 2: Why/How (Tech Specs) -->
                             <div class="accordion-item animate-fade-in-up delay-200">
                                 <h2 class="accordion-header" id="headingTwo">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Apakah ada garansi setelah website jadi?
+                                        Apa keunggulan teknis website buatan Lumora Webworks?
                                     </button>
                                 </h2>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Ya, kami memberikan garansi pemeliharaan selama <strong>2 minggu </strong>
-                                        setelah
-                                        website diluncurkan.
+                                        Setiap website dibangun dengan standar tinggi: <strong>Desain Premium UI/UX
+                                            Modern</strong>, <strong>Responsif (Mobile-Friendly)</strong>, struktur kode
+                                        yang <strong>SEO-Friendly</strong>, serta jaminan keamanan dan kecepatan akses.
                                     </div>
                                 </div>
                             </div>
+                            <!-- Question 3: Who/Guarantees -->
                             <div class="accordion-item animate-fade-in-up delay-300">
                                 <h2 class="accordion-header" id="headingThree">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                         data-bs-target="#collapseThree" aria-expanded="false"
                                         aria-controls="collapseThree">
-                                        Kapan kami jam/hari kami Ready
+                                        Apakah Lumora Webworks memberikan garansi pemeliharaan?
                                     </button>
                                 </h2>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        Minggu-kamis : 07.00 - 23.00
+                                        Ya, kami memberikan garansi pemeliharaan pasca-rilis untuk memastikan website
+                                        berjalan stabil, aman, dan bebas dari kendala teknis (bug fixing).
                                     </div>
                                 </div>
                             </div>
@@ -1061,17 +1224,18 @@
         <div class="container pt-5 pb-4 animate-fade-in-up">
             <div class="row gy-5">
                 <!-- Brand Column -->
-                <div class="col-lg-4 col-md-6">
-                    <h3 class="fw-bold mb-4 text-uppercase"
+                <div class="col-lg-4 col-12 mb-4">
+                    <h3 class="fw-bold mb-4 text-uppercase d-flex align-items-center"
                         style="font-family: var(--font-display); color: var(--accent-gold); letter-spacing: 2px;">
-                        <i class="fas fa-gem me-2"></i>Lumora Web
+                        <img src="img/logo.svg" alt="Lumora Logo" class="me-3" style="width: 32px; height: 32px;">
+                        Lumora Web
                     </h3>
                     <p class="text-white-50 mb-4" style="line-height: 1.8;">
                         Jasa pembuatan website profesional dan terpercaya. Kami membantu bisnis Anda Go Digital dengan
                         solusi website
                         premium yang cepat dan elegan.
                     </p>
-                    <div class="d-flex gap-3">
+                    <div class="d-flex gap-3 justify-content-center">
                         <a href="#" aria-label="Instagram"
                             class="btn btn-outline-light rounded-circle p-0 d-flex align-items-center justify-content-center hover-gold"
                             style="width: 40px; height: 40px; border-color: var(--accent-gold); color: var(--accent-gold);">
@@ -1090,8 +1254,8 @@
                     </div>
                 </div>
 
-                <!-- Links Column -->
-                <div class="col-lg-2 col-md-6 offset-lg-1">
+                <!-- Menu Column -->
+                <div class="col-lg-2 col-6 offset-lg-1 mb-4">
                     <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Menu</h5>
                     <ul class="list-unstyled">
                         <li class="mb-3"><a href="#hero"
@@ -1105,23 +1269,8 @@
                     </ul>
                 </div>
 
-                <!-- Contact Column -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Kontak</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-3 d-flex align-items-start">
-                            <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
-                            <span>Jawa timur, Indonesia</span>
-                        </li>
-                        <li class="mb-3 d-flex align-items-center">
-                            <i class="fas fa-phone-alt me-3 text-primary"></i>
-                            <span>+62 812-5995-3779</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Newsletter Column -->
-                <div class="col-lg-2 col-md-6">
+                <!-- Legal Column (Moved Up) -->
+                <div class="col-lg-2 col-6 mb-4">
                     <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Legal</h5>
                     <ul class="list-unstyled">
                         <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none hover-gold">FAQ</a></li>
@@ -1129,6 +1278,21 @@
                                 Policy</a></li>
                         <li class="mb-3"><a href="#" class="text-white-50 text-decoration-none hover-gold">Terms of
                                 Service</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Column (Moved Down) -->
+                <div class="col-lg-3 col-12 mb-4">
+                    <h5 class="text-uppercase mb-4" style="color: var(--accent-gold); letter-spacing: 1px;">Kontak</h5>
+                    <ul class="list-unstyled text-white-50">
+                        <li class="mb-3 d-flex align-items-start justify-content-center">
+                            <i class="fas fa-map-marker-alt mt-1 me-3 text-primary"></i>
+                            <span>Jawa timur, Indonesia</span>
+                        </li>
+                        <li class="mb-3 d-flex align-items-center justify-content-center">
+                            <i class="fas fa-phone-alt me-3 text-primary"></i>
+                            <span>+62 812-5995-3779</span>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -1166,7 +1330,7 @@
 
     <!-- Custom JS -->
     <script src="script.js"></script>
-
+    <script src="mobile-nav-fix.js"></script>
 </body>
 
 </html>
